@@ -10,7 +10,6 @@ connection
     .authenticate()
     .then(function () {
         console.log("Conexão com DB realizada com sucesso!");
-
     })
     .catch(function (error) {
         console.log(error);
@@ -135,7 +134,7 @@ app.post("/salvarResposta", (req, res) => {
 })
 
 // Start servidor NOde...
-app.listen(8080, (error) => {
+app.listen(3000, (error) => {
     if (error) {
         console.log("Erro ao subir servidor Node!");
     } else {
